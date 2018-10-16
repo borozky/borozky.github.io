@@ -1,65 +1,186 @@
 <template>
-  <section class="container">
-    <div>
-      <app-logo/>
-      <h1 class="title">
-        ghpageapp
-      </h1>
-      <h2 class="subtitle">
-        VueJS project for borozky.github.io
-      </h2>
-      <div class="links">
-        <a
-          href="https://nuxtjs.org/"
-          target="_blank"
-          class="button--green">Documentation</a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          class="button--grey">GitHub</a>
-      </div>
+    <div id="HomePage" class="site-wrapper">
+        <div class="hero-section vcenter-parent">
+            <div class="hero-content">
+                <div class="container">
+
+                    <div id="Summary">
+                        <h1 id="Author">Joshua Orozco</h1>
+                        <h2 id="Role">.NET / Full-stack Developer</h2>
+                        <p id="SkillSet">
+                            <span>.NET</span> &#183;
+                            <span>Backend</span> &#183;
+                            <span>Front-end</span> &#183;
+                            <span>Mobile</span>
+                        </p>
+                        <ul id="AdditionalDetails">
+                            <li>RMIT University Bachelor of I.T. student</li>
+                            <li>Email: <a href="mailto:joshua.b.orozco@gmail.com">joshua.b.orozco@gmail.com</a></li>
+                            <li>LinkedIn: <a href="#">www.linkedin.com/in/joshua-orozco-8819b0a0</a></li>
+                        </ul>
+                        <p>
+                            <br/>
+                            <small>
+                                Projects section coming soon...
+                            </small>
+                        </p>
+                    </div>
+
+                    <div id="WebTechIcons">
+                        <span class="tech-icon" style="border-radius: 100%">
+                            <img src="../assets/netcore.svg" alt="">
+                        </span>
+                        <span class="tech-icon">
+                            <img src="../assets/laravel.svg" alt="">
+                        </span>
+                         <span class="tech-icon">
+                            <img src="../assets/wordpress.svg" alt="">
+                        </span>
+                         <span class="tech-icon" style="background-color: transparent">
+                            <img src="../assets/react.svg" alt="">
+                        </span>
+                        <span class="tech-icon" style="width: auto; background-color: transparent">
+                            <img src="../assets/azure-sql.svg" alt="" style="width: auto">
+                        </span>
+                        <span class="tech-icon">
+                            <img src="../assets/ios-dev.svg" alt="">
+                        </span>
+                        <span class="tech-icon" style="background-color: transparent">
+                            <img src="../assets/android-dev.svg" alt="">
+                        </span>
+                        <span class="tech-icon" style="background: transparent">
+                            <img src="../assets/java.svg" alt="">
+                        </span>
+                        <span class="tech-icon" style="background-color: transparent">
+                            <img src="../assets/google-maps-js-api.png" alt="">
+                        </span>
+                        <span class="tech-icon" style="background-color: transparent">
+                            <img src="../assets/git.svg" alt="">
+                        </span>
+                        
+                        
+                    </div>
+
+                </div>
+            </div>
+        </div>
     </div>
-  </section>
 </template>
 
-<script>
-import AppLogo from '~/components/AppLogo.vue'
-
-export default {
-  components: {
-    AppLogo
-  }
-}
-</script>
-
 <style>
+.hero-section {
+    background-color: #592C8F;
+    color: #FFFFFF;
+    height: 480px;
+    margin-top: 38px;
+    font-size: 14px;
+}
+
+.hero-section a {
+    color: #FFFFFF;
+    text-decoration: underline;
+}
+
+.hero-section a:hover {
+    text-decoration: none;
+}
+
 .container {
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 15px;
 }
 
-.title {
-  font-family: "Quicksand", "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; /* 1 */
-  display: block;
-  font-weight: 300;
-  font-size: 100px;
-  color: #35495e;
-  letter-spacing: 1px;
+.hero-content {
+    width: 100%;
 }
 
-.subtitle {
-  font-weight: 300;
-  font-size: 42px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
+#Summary {
+    display: inline-block;
+    vertical-align: top;
 }
 
-.links {
-  padding-top: 15px;
+#AdditionalDetails {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    margin-top: 40px;
 }
+
+#WebTechIcons {
+    display: inline-block;
+    max-width: 360px;
+    margin-top: 30px;
+}
+
+.tech-icon {
+    display: inline-block;
+    background-color: #FFFFFF;
+    height: 40px;
+    width: 40px;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.tech-icon img {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+}
+
+#Author {
+    font-size: 40px;
+    font-weight: normal;
+    margin-bottom: 15px;
+}
+
+#Role {
+    font-weight: normal;
+}
+
+#SkillSet {
+    display: inline-block;
+}
+
+@media screen and (min-width: 640px) {
+    .hero-section {
+        font-size: 16px;
+    }
+
+    .hero-section a {
+        color: #FFFFFF;
+        text-decoration: underline;
+    }
+
+    .hero-section a:hover {
+        text-decoration: none;
+    }
+
+    .vcenter-parent {
+        display: flex;
+        align-items: center;
+    }
+
+    #Summary {
+        margin-right: 100px;
+    }
+
+    #AdditionalDetails {
+        margin-top: 88px;
+    }
+
+    .tech-icon {
+        height: 60px;
+        width: 60px;
+        border-radius: 20px;
+    }
+
+    #Author {
+        font-size: 60px;
+    }
+}
+
 </style>
+
 
