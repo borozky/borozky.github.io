@@ -15,6 +15,7 @@ html {
   -webkit-font-smoothing: antialiased;
   box-sizing: border-box;
   background-color: #592C8F;
+  padding-bottom: 200px;
 }
 
 *, *:before, *:after {

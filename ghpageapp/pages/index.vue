@@ -13,10 +13,14 @@
                             <span>Front-end</span> &#183;
                             <span>Mobile</span>
                         </p>
+                        <p>
+                            <small>Melbourne, Australia</small>
+                        </p>
                         <ul id="AdditionalDetails">
                             <li>RMIT University Bachelor of I.T. student</li>
                             <li>Email: <a href="mailto:joshua.b.orozco@gmail.com">joshua.b.orozco@gmail.com</a></li>
-                            <li>LinkedIn: <a href="#">www.linkedin.com/in/joshua-orozco-8819b0a0</a></li>
+                            <li>LinkedIn: <a href="https://linkedin.com/in/joshua-orozco-8819b0a0" target="_blank">https://linkedin.com/in/joshua-orozco-8819b0a0</a></li>
+                            <li>Github: <a href="https://github.com/borozky/" target="_blank">https://github.com/borozky/</a></li>
                         </ul>
                         <p>
                             <br/>
@@ -163,7 +167,7 @@
     }
 
     #AdditionalDetails {
-        margin-top: 88px;
+        margin-top: 60px;
     }
 
     .tech-icon {
