@@ -1,6 +1,6 @@
 <template>
     <div id="HomePage" class="site-wrapper">
-        <div class="hero-section vcenter-parent">
+        <div class="hero-section">
             <div class="hero-content">
                 <div class="container">
 
@@ -143,9 +143,10 @@
     display: inline-block;
 }
 
-@media screen and (min-width: 640px) {
+@media screen and (min-width: 769px) {
     .hero-section {
         font-size: 16px;
+        margin-top: 60px;
     }
 
     .hero-section a {
@@ -155,11 +156,6 @@
 
     .hero-section a:hover {
         text-decoration: none;
-    }
-
-    .vcenter-parent {
-        display: flex;
-        align-items: center;
     }
 
     #Summary {
