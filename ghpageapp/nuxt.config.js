@@ -37,6 +37,9 @@ module.exports = {
   },
   plugins: [
     { src: '~plugins/ga.js', ssr: false }
-  ]
+  ],
+  server: {
+    host: '0.0.0.0', // default: localhost
+  },
 }
 
