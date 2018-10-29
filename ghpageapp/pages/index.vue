@@ -32,37 +32,35 @@
 
                     <div id="WebTechIcons">
                         <span class="tech-icon" style="border-radius: 100%">
-                            <img src="../assets/netcore.svg" alt="">
+                            <img src="../assets/netcore.svg" title="C#, ASP.NET Core, Entity Framework" alt="">
                         </span>
                         <span class="tech-icon">
-                            <img src="../assets/laravel.svg" alt="">
+                            <img src="../assets/laravel.svg" title="Laravel" alt="">
                         </span>
                          <span class="tech-icon">
-                            <img src="../assets/wordpress.svg" alt="">
+                            <img src="../assets/wordpress.svg" title="Wordpress Theme and Plugin Development" alt="">
                         </span>
                          <span class="tech-icon" style="background-color: transparent">
-                            <img src="../assets/react.svg" alt="">
+                            <img src="../assets/react.svg" title="ReactJS + Redux" alt="">
                         </span>
                         <span class="tech-icon" style="width: auto; background-color: transparent">
-                            <img src="../assets/azure-sql.svg" alt="" style="width: auto">
+                            <img src="../assets/azure-sql.svg" title="SQL, MySQL, SQLite, SQL Server" alt="" style="width: auto">
                         </span>
                         <span class="tech-icon">
-                            <img src="../assets/ios-dev.svg" alt="">
+                            <img src="../assets/ios-dev.svg" title="iOS Development and Design" alt="">
                         </span>
                         <span class="tech-icon" style="background-color: transparent">
-                            <img src="../assets/android-dev.svg" alt="">
+                            <img src="../assets/android-dev.svg" title="Android Development" alt="">
                         </span>
                         <span class="tech-icon" style="background: transparent">
-                            <img src="../assets/java.svg" alt="">
+                            <img src="../assets/java.svg" title="Java SE, Java EE, Swing, Maven" alt="">
                         </span>
                         <span class="tech-icon" style="background-color: transparent">
-                            <img src="../assets/google-maps-js-api.png" alt="">
+                            <img src="../assets/google-maps-js-api.png" title="Google Maps Javascript API" alt="">
                         </span>
                         <span class="tech-icon" style="background-color: transparent">
-                            <img src="../assets/git.svg" alt="">
+                            <img src="../assets/git.svg" title="Git, GitHub, GitFlow" alt="">
                         </span>
-                        
-                        
                     </div>
 
                 </div>
