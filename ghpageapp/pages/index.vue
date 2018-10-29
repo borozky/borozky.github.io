@@ -18,9 +18,13 @@
                         </p>
                         <ul id="AdditionalDetails">
                             <li>RMIT University Bachelor of I.T. student</li>
-                            <li>Email: <a href="mailto:joshua.b.orozco@gmail.com">joshua.b.orozco@gmail.com</a></li>
-                            <li>LinkedIn: <a href="https://linkedin.com/in/joshua-orozco-8819b0a0" target="_blank">https://linkedin.com/in/joshua-orozco-8819b0a0</a></li>
-                            <li>Github: <a href="https://github.com/borozky/" target="_blank">https://github.com/borozky/</a></li>
+                            <li><a href="mailto:joshua.b.orozco@gmail.com">joshua.b.orozco@gmail.com</a></li>
+                            <li><a href="https://linkedin.com/in/joshua-orozco-8819b0a0" target="_blank">https://linkedin.com/in/joshua-orozco-8819b0a0</a></li>
+                            <li><a href="https://github.com/borozky/" target="_blank">https://github.com/borozky/</a></li>
+                        </ul>
+                        <ul id="Documents">
+                            <li><a href="https://drive.google.com/open?id=1ZnDD8wxRoDhreSVHZ_U2t9N8dElE8U0S" target="_blank">Resume</a></li>
+                            <li><a href="https://drive.google.com/file/d/1S4BYtHFUxL6dmBeCDnKAlGE8LeWefkLR/view?usp=sharing" target="_blank">Academic Transcript</a></li>
                         </ul>
                     </div>
 
@@ -111,7 +115,7 @@ export default Vue.extend({
     vertical-align: top;
 }
 
-#AdditionalDetails {
+#AdditionalDetails, #Documents {
     margin: 0;
     padding: 0;
     list-style: none;
