@@ -1,12 +1,8 @@
-# STATIC
+# My Github Portfolio
+Written in NuxtJS
 
-This directory contains your static files.
-Each file inside this directory is mapped to /.
+#### Setup
+- Clone the repository
+- Navigate to <code>ghpageapp</code> folder. Run <code>yarn run regenerate</code> (not generate) to generate HTML files from NuxtJS template templates.
 
-Example: /static/robots.txt is mapped as /robots.txt.
-
-More information about the usage of this directory in the documentation:
-https://nuxtjs.org/guide/assets#static
-
-**This directory is not required, you can delete it if you don't want to use it.**
 
