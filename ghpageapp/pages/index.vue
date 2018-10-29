@@ -6,7 +6,7 @@
 
                     <div id="Summary">
                         <h1 id="Author">Joshua Orozco</h1>
-                        <h2 id="Role">.NET / Full-stack Developer</h2>
+                        <h2 id="Role">Full-stack Developer</h2>
                         <p id="SkillSet">
                             <span>.NET</span> &#183;
                             <span>Backend</span> &#183;
