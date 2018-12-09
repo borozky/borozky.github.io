@@ -23,8 +23,8 @@
                             <li><a href="https://github.com/borozky/" target="_blank">https://github.com/borozky/</a></li>
                         </ul>
                         <ul id="Documents">
-                            <li><a href="https://drive.google.com/open?id=1ZnDD8wxRoDhreSVHZ_U2t9N8dElE8U0S" target="_blank">Resume</a></li>
-                            <li><a href="https://drive.google.com/file/d/1S4BYtHFUxL6dmBeCDnKAlGE8LeWefkLR/view?usp=sharing" target="_blank">Academic Transcript</a></li>
+                            <li><a href="https://drive.google.com/open?id=1UV3Gww6Db0bqDvrBY24IWL2rassMjxTU" target="_blank" title=".NET Resume (Updated 09 December 2018)">Resume</a></li>
+                            <li><a href="https://drive.google.com/open?id=1EXXH9w6v-_9PRTXhbbjfNtjbfhDDPoDs" target="_blank" title="Academic Transcript (Issues 29 November 2018)">Academic Transcript</a></li>
                         </ul>
                     </div>
 
