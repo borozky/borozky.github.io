@@ -1,25 +1,24 @@
 # My Github Portfolio
-Written in NuxtJS
+Written in NuxtJS + TypeScript
 
 #### Build setup
-After you cloned the repository...
 
 ``` powershell
+# Clone the repository
+git clone https://github.com/borozky/borozky.github.io
+
+# go to nuxt js project "ghpageapp"
+cd ghpageapp
+
 # install dependencies
-> npm install # Or yarn install
+npm install # Or yarn install
 
 # serve with hot reload at {your-public-ip}:3000
-> npm run dev
+npm run dev
 
-# generate static project and copy to parent folder
-> npm run regenerate
-
+# generate static project and copy to parent folder to update Github pages
+npm run regenerate
 ```
 
-#### Modifing this README file
+#### Modifying this README file
 Modify the README.md file inside <code>./ghpageapp/static/</code> folder instead
-
-#### Update GitHub pages
-- Make sure you are inside the <code>ghpageapp</code> folder. 
-- Run <code>yarn run regenerate</code> to re-generate HTML files and assets.
-- Commit and push to Github.
