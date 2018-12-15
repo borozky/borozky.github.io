@@ -1,0 +1,25 @@
+{
+    "defaultSeverity": "warning",
+    "extends": "tslint:latest",
+    "linterOptions": {
+        "exclude": [
+            "./**/*.js",
+            "./node_modules/"
+        ]
+    },
+    "rules": {
+        "no-implicit-dependencies": false,
+        "max-line-length": false,
+        "no-string-literal": false,
+        "only-arrow-functions": false,
+        "object-literal-shorthand": false,
+        "no-unused-expression": true,
+        "no-duplicate-variable": true,
+        "no-unused-variable": true,
+        "curly": true,
+        "class-name": true,
+        "semicolon": false,
+        "triple-equals": true,
+        "quotemark": false
+    }
+}
