@@ -24,29 +24,30 @@
     </div>
 </template>
 
-<script>
-import Vue from 'vue'
+<script lang="ts">
+import Vue from "vue";
+
 export default Vue.extend({
     props: {
-        title: {
-            type: String,
-            required: true,
-        },
         description: {
+            required: true,
             type: String,
-            required: true
-        },
-        thumbnail: {
-            type: String,
-            required: true
         },
         link: {
-            type: String,
+            default: "#",
             required: false,
-            default: "#"
-        }
-    }
-})
+            type: String,
+        },
+        thumbnail: {
+            required: true,
+            type: String,
+        },
+        title: {
+            required: true,
+            type: String,
+        },
+    },
+});
 </script>
 
 
@@ -56,10 +57,6 @@ export default Vue.extend({
     display: table;
     width: 100%;
     padding-bottom: 100px;
-}
-
-.project-detail-inner {
-
 }
 
 .project-detail .left {

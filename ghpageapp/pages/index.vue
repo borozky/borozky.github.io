@@ -24,7 +24,7 @@
                         </ul>
                         <ul id="Documents">
                             <li><a href="https://drive.google.com/open?id=1UV3Gww6Db0bqDvrBY24IWL2rassMjxTU" target="_blank" title=".NET Resume (Updated 09 December 2018)">Resume</a></li>
-                            <li><a href="https://drive.google.com/open?id=1EXXH9w6v-_9PRTXhbbjfNtjbfhDDPoDs" target="_blank" title="Academic Transcript (Issues 29 November 2018)">Academic Transcript</a></li>
+                            <li><a :href="academic_transcript" target="_blank" :title="`Academic Transcript (Issued ${ academic_transcript_date_issued })`">Academic Transcript</a></li>
                         </ul>
                     </div>
 
@@ -69,14 +69,20 @@
     </div>
 </template>
 
-<script>
+<script lang="ts">
 import Vue from "vue"
-import ProjectSection from "../components/ProjectSection"
+import ProjectSection from "../components/ProjectSection.vue"
 
 export default Vue.extend({
     components: {
-        "project-section": ProjectSection
-    }
+        "project-section": ProjectSection,
+    },
+    data: function() {
+        return {
+            academic_transcript: process.env["ACADEMIC_TRANSCRIPT"],
+            academic_transcript_date_issued: process.env["ACADEMIC_TRANSCRIPT_DATE_ISSUED"],
+        }
+    },
 })
 </script>
 
