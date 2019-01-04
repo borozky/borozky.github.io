@@ -11,13 +11,13 @@ git clone https://github.com/borozky/borozky.github.io
 cd ghpageapp
 
 # install dependencies
-npm install # Or yarn install
+yarn install
 
 # serve with hot reload at {your-public-ip}:3000
-npm run dev
+yarn run dev
 
 # generate static project and copy to parent folder to update Github pages
-npm run regenerate
+yarn run regenerate
 ```
 
 #### Modifying this README file

@@ -30,10 +30,10 @@ export default Vue.extend({
         return {
             projects: [
                 {
-                    description: "Mapping tools to help users draw solar panels in the roof tops. Written in ReactJS",
-                    link: "https://s3-ap-southeast-2.amazonaws.com/rmit-s3485376-maptool/advanced/build-05/index.html",
+                    description: "Mapping tools to help users draw solar panels in the roof tops. Uses React, Google Maps API, Typescript and SVG",
+                    link: "https://s3-ap-southeast-2.amazonaws.com/rmit-s3485376-maptool/advanced/build-07/index.html",
                     thumbnail: mappingTooThumbnail,
-                    title: "Solar Panel Mapping Tool (Advanced Prototype)",
+                    title: "Solar Panel Mapping Tool",
                 },
                 {
                     description: "Label drawing tool written with jQuery and Redux.",
