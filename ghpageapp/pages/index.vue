@@ -17,7 +17,7 @@
                             <small>Melbourne, Australia</small>
                         </p>
                         <ul id="AdditionalDetails">
-                            <li>RMIT University Bachelor of I.T. student</li>
+                            <li>RMIT University Bachelor of I.T. graduate</li>
                             <li><a href="mailto:joshua.b.orozco@gmail.com">joshua.b.orozco@gmail.com</a></li>
                             <li><a href="https://linkedin.com/in/joshua-orozco-8819b0a0" target="_blank">https://linkedin.com/in/joshua-orozco-8819b0a0</a></li>
                             <li><a href="https://github.com/borozky/" target="_blank">https://github.com/borozky/</a></li>
