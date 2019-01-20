@@ -31,7 +31,7 @@ export default Vue.extend({
             projects: [
                 {
                     description: "Mapping tools to help users draw solar panels in the roof tops. Uses React, Google Maps API, Typescript and SVG",
-                    link: "https://s3-ap-southeast-2.amazonaws.com/rmit-s3485376-maptool/advanced/build-07/index.html",
+                    link: "https://s3-ap-southeast-2.amazonaws.com/rmit-s3485376-maptool/advanced/build-09/index.html",
                     thumbnail: mappingTooThumbnail,
                     title: "Solar Panel Mapping Tool",
                 },
