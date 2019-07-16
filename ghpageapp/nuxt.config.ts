@@ -1,8 +1,9 @@
-require("dotenv").config();
+import NuxtConfiguration from "@nuxt/config"
 
-export default {
-   /**
-    * Header of the page
+const config: NuxtConfiguration = {
+    mode: 'spa',
+    /*
+    ** Headers of the page
     */
     head: {
         title: 'Borozky Github Website',
@@ -16,13 +17,31 @@ export default {
         ]
     },
     /*
-    ** Customize the progress bar color
+    ** Customize the progress-bar color
     */
     loading: { color: '#3B8070' },
-
-    /**
-     * Build configuration
-     */
+    /*
+    ** Global CSS
+    */
+    css: [
+    ],
+    /*
+    ** Plugins to load before mounting the App
+    */
+    plugins: [
+        { src: '~plugins/ga.js', ssr: false }
+    ],
+    /*
+    ** Nuxt.js modules
+    */
+    modules: [
+        // Doc: https://github.com/nuxt-community/axios-module#usage
+        '@nuxtjs/axios',
+        ["@nuxtjs/dotenv", { /* Options can be found here: https://github.com/nuxt-community/dotenv-module#options */}]
+    ],
+    /*
+    ** Build configuration
+    */
     build: {
         /**
          * Extends webpack config here
@@ -40,34 +59,13 @@ export default {
             // }
         }
     },
-    plugins: [
-        { src: '~plugins/ga.js', ssr: false }
-    ],
-
-    /**
-     * Nuxt.js modules
-     */
-    modules: [
-        // Doc: https://github.com/nuxt-community/axios-module#usage
-        '@nuxtjs/axios',
-        "nuxt-typescript",
-        ["@nuxtjs/dotenv", { /* Options can be found here: https://github.com/nuxt-community/dotenv-module#options */}]
-    ],
-
-    /**
-     * Axios module configuration
-     */
-    axios: {
-        // See https://github.com/nuxt-community/axios-module#options
-    },
-
     env: {
         "ACADEMIC_TRANSCRIPT": "https://drive.google.com/open?id=1EXXH9w6v-_9PRTXhbbjfNtjbfhDDPoDs",
         "ACADEMIC_TRANSCRIPT_DATE_ISSUED": "29 November 2018"
     },
-
     server: {
         host: '0.0.0.0', // default: localhost
     },
 }
 
+export default config;
