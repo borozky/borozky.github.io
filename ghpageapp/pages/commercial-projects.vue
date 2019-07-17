@@ -2,18 +2,16 @@
     <div id="HomePage" class="site-wrapper">
         <hero-section></hero-section>
 
-        <project-section></project-section>
+        Commercial projects
     </div>
 </template>
 
 <script lang="ts">
 import Vue from "vue"
-import ProjectSection from "../components/ProjectSection.vue"
 import HeroSection from "../components/HeroSection.vue";
 
 export default Vue.extend({
     components: {
-        "project-section": ProjectSection,
         "hero-section": HeroSection
     },
 })
