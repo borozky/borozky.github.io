@@ -1,27 +1,37 @@
 <template>
-    <div id="HomePage" class="site-wrapper">
-        <hero-section></hero-section>
-
-        <project-section></project-section>
+    <div id="HomePage">
+        <header>
+            <div class="container">
+                <h2>Projects</h2>
+            </div>
+        </header>
+        <projects-list />
     </div>
 </template>
 
 <script lang="ts">
 import Vue from "vue"
-import ProjectSection from "../components/ProjectSection.vue"
-import HeroSection from "../components/HeroSection.vue";
+import ProjectsList from "../components/ProjectsList.vue"
 
 export default Vue.extend({
     components: {
-        "project-section": ProjectSection,
-        "hero-section": HeroSection
+        "projects-list": ProjectsList,
     },
+    //@ts-ignore
+    scrollToTop: false,
 })
 </script>
 
 
-<style>
-/* nothing */
+<style scoped>
+header {
+    padding-top: 30px;
+    padding-bottom: 15px;
+}
+header h2 {
+    margin: 0;
+}
 </style>
+
 
 

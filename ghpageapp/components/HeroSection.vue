@@ -1,44 +1,57 @@
 <template>
     <div class="hero-section">
         <div class="hero-content">
-            <div class="container">
+            <div class="container clearfix">
 
                 <div id="Summary">
                     <h1 id="Author">Joshua Orozco</h1>
-                    <h2 id="Role">Full-stack Developer</h2>
+                    <h2 id="Role">
+                        Full-stack Developer
+                    </h2>
                     <p id="SkillSet">
-                        <span>.NET</span> &#183;
                         <span>Backend</span> &#183;
                         <span>Front-end</span> &#183;
-                        <span>Mobile</span>
+                        <span>Mobile</span> &#183;
+                        <span>.NET</span>
                     </p>
-                    <p>
+                    <p id="Location">
                         <small>Melbourne, Australia</small>
                     </p>
                     <ul id="AdditionalDetails">
-                        <li>RMIT University Bachelor of I.T. graduate</li>
-                        <li><a href="mailto:joshua.b.orozco@gmail.com">joshua.b.orozco@gmail.com</a></li>
-                        <li><a href="https://linkedin.com/in/joshua-orozco-8819b0a0" target="_blank">https://linkedin.com/in/joshua-orozco-8819b0a0</a></li>
-                        <li><a href="https://github.com/borozky/" target="_blank">https://github.com/borozky/</a></li>
+                        <li>
+                            <i class="fa fa-graduation-cap"></i> RMIT University Bachelor of I.T. graduate
+                        </li>
+                        <li>
+                            <i class="fa fa-envelope"></i> <a href="mailto:joshua.b.orozco@gmail.com">joshua.b.orozco@gmail.com</a>
+                        </li>
+                        <li>
+                            <i class="fa fa-linkedin"></i> <a href="https://linkedin.com/in/joshua-orozco-8819b0a0" target="_blank">https://linkedin.com/in/joshua-orozco-8819b0a0</a>
+                        </li>
+                        <li>
+                            <i class="fa fa-github"></i> <a href="https://github.com/borozky/" target="_blank">https://github.com/borozky/</a>
+                        </li>
                     </ul>
                     <ul id="Documents">
-                        <li><a href="https://drive.google.com/open?id=1UV3Gww6Db0bqDvrBY24IWL2rassMjxTU" target="_blank" title=".NET Resume (Updated 09 December 2018)">Resume</a></li>
-                        <li><a :href="academic_transcript" target="_blank" :title="`Academic Transcript (Issued ${ academic_transcript_date_issued })`">Academic Transcript</a></li>
+                        <li><i class="fa fa-file"></i> <a href="https://drive.google.com/open?id=1UV3Gww6Db0bqDvrBY24IWL2rassMjxTU" target="_blank" title=".NET Resume (Updated 09 December 2018)">Resume</a></li>
+                        <li><i class="fa fa-bar-chart"></i> <a :href="academic_transcript" target="_blank" :title="`Academic Transcript (Issued ${ academic_transcript_date_issued })`">Academic Transcript</a></li>
                     </ul>
                 </div>
 
                 <div id="WebTechIcons">
+                    <span class="tech-icon" style="background-color: transparent">
+                        <img src="../assets/react.svg" title="ReactJS + Redux" alt="">
+                    </span>
                     <span class="tech-icon" style="border-radius: 100%">
                         <img src="../assets/netcore.svg" title="C#, ASP.NET Core, Entity Framework" alt="">
                     </span>
                     <span class="tech-icon">
                         <img src="../assets/laravel.svg" title="Laravel" alt="">
                     </span>
-                        <span class="tech-icon">
-                        <img src="../assets/wordpress.svg" title="Wordpress Theme and Plugin Development" alt="">
+                    <span class="tech-icon" style="background-color: transparent">
+                        <img src="../assets/yii.svg" title="Yii Framework" alt="">
                     </span>
-                        <span class="tech-icon" style="background-color: transparent">
-                        <img src="../assets/react.svg" title="ReactJS + Redux" alt="">
+                    <span class="tech-icon">
+                        <img src="../assets/wordpress.svg" title="Wordpress Theme and Plugin Development" alt="">
                     </span>
                     <span class="tech-icon" style="width: auto; background-color: transparent">
                         <img src="../assets/azure-sql.svg" title="SQL, MySQL, SQLite, SQL Server" alt="" style="width: auto">
@@ -81,9 +94,9 @@ export default Vue.extend({
 .hero-section {
     background-color: #592C8F;
     color: #FFFFFF;
-    height: 480px;
-    margin-top: 38px;
     font-size: 14px;
+    padding-bottom: 30px;
+    padding-top: 30px;
 }
 
 .hero-section a {
@@ -93,13 +106,6 @@ export default Vue.extend({
 
 .hero-section a:hover {
     text-decoration: none;
-}
-
-.container {
-    width: 100%;
-    max-width: 960px;
-    margin: 0 auto;
-    padding: 0 15px;
 }
 
 .hero-content {
@@ -116,6 +122,7 @@ export default Vue.extend({
     padding: 0;
     list-style: none;
     margin-top: 40px;
+    line-height: 1.4;
 }
 
 #WebTechIcons {
@@ -139,9 +146,14 @@ export default Vue.extend({
     height: 100%;
 }
 
+#Author, #Role, #SkillSet, #Location {
+    margin: 0;
+}
+
 #Author {
     font-size: 40px;
     font-weight: normal;
+    margin: 0;
     margin-bottom: 15px;
 }
 
@@ -153,10 +165,24 @@ export default Vue.extend({
     display: inline-block;
 }
 
+#AdditionalDetails li,
+#Documents li {
+    position: relative;
+    padding-left: 25px;
+    margin-bottom: 3px;
+}
+
+#AdditionalDetails i.fa, 
+#Documents i.fa {
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    width: 20px;
+}
+
 @media screen and (min-width: 769px) {
     .hero-section {
         font-size: 16px;
-        margin-top: 60px;
     }
 
     .hero-section a {
@@ -170,10 +196,6 @@ export default Vue.extend({
 
     #Summary {
         margin-right: 100px;
-    }
-
-    #AdditionalDetails {
-        margin-top: 60px;
     }
 
     .tech-icon {
