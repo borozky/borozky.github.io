@@ -9,12 +9,14 @@
     "build": "nuxt build",
     "start": "nuxt start",
     "generate": "nuxt generate",
-    "regenerate": "nuxt generate && copy .\\dist\\* ..\\ && copy .\\dist\\_nuxt\\* ..\\_nuxt\\ && copy .\\dist\\_nuxt\\img\\* ..\\_nuxt\\img\\"
+    "deploy:windows": "nuxt generate && copy .\\dist\\* ..\\ && copy .\\dist\\_nuxt\\* ..\\_nuxt\\ && copy .\\dist\\_nuxt\\img\\* ..\\_nuxt\\img\\",
+    "deploy:mac": "nuxt generate && cp -R ./dist/* ../"
   },
   "dependencies": {
     "@nuxtjs/axios": "^5.5.4",
     "@nuxtjs/dotenv": "^1.3.0",
     "nuxt": "^2.0.0",
+    "nuxt-property-decorator": "^2.3.0",
     "ts-node": "^8.3.0"
   },
   "devDependencies": {

@@ -1,18 +1,14 @@
 <template>
-    <div id="ProjectSection">
-        <div class="container">
-            <h2 class="section-title">Projects</h2>
-        </div>
-        <project-detail v-for="(project, index) in projects" 
+    <div class="project-list">
+        <project v-for="(project, index) in projects" 
             :key="index" 
             v-bind="project">
-        </project-detail>
+        </project>
     </div>
 </template>
 
 <script lang="ts">
 import Vue from "vue";
-import ProjectDetail from "./ProjectDetail.vue";
 
 import abcCineplexCorp from "../assets/project-thumbnails/abc-cineplex-corp.png";
 import brainstormIt from "../assets/project-thumbnails/brainstormit.com.au.png";
@@ -24,11 +20,27 @@ import gmobility from "../assets/project-thumbnails/gmobility.com.au.png";
 import prototypeLabellingTool from "../assets/project-thumbnails/Prototype-Labelling-Tool.png";
 import mappingToolThumbnail from "../assets/project-thumbnails/solar-panel-mapping-tool.png";
 import tmcnhsWebsite from "../assets/project-thumbnails/tmcnhs-website.png";
+import PVSellRoofLayoutTool from "../assets/project-thumbnails/pvsell-roof-layout-tool.png";
+import PVsell from "../assets/project-thumbnails/pvsell.png";
+
+import Project from "./Project.vue";
 
 export default Vue.extend({
     data() {
         return {
             projects: [
+                {
+                    description: "PVsell is a solar sales and design software by Sunwiz. It is project-based, B2B enterprise web application targeting solar companies. Written in PHP.",
+                    link: "https://ace.pvsell.com.au",
+                    thumbnail: PVsell,
+                    title: "PVsell",
+                },
+                {
+                    description: "PVsell's roof layout component to allow users to draw solar panels. Has option to serve high resolution imagery. Uses React, Google Maps API and SVG.",
+                    link: "https://ace.pvsell.com.au",
+                    thumbnail: PVSellRoofLayoutTool,
+                    title: "PVsell roof layout component",
+                },
                 {
                     description: "Mapping tools to help users draw solar panels in the roof tops. Uses React, Typescript, Google Maps API and SVG",
                     link: "https://borozky-roof-utils.firebaseapp.com",
@@ -93,22 +105,9 @@ export default Vue.extend({
         };
     },
     components: {
-        "project-detail": ProjectDetail,
+        "project": Project
     },
 });
 </script>
 
-
-<style>
-#ProjectSection {
-    background-color: #FFFFFF;
-    padding-top: 15px;
-}
-
-
-#ProjectSection .section-title {
-    margin-bottom: 40px;
-    margin-top: 20px;
-}
-</style>
 

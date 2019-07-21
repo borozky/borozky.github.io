@@ -13,9 +13,31 @@ const config: NuxtConfiguration = {
             { hid: 'description', name: 'description', content: 'Borozky Github Page' }
         ],
         link: [
-            { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+            { 
+                rel: 'icon', 
+                type: 'image/x-icon', 
+                href: '/favicon.ico' 
+            },
+            { 
+                rel: 'stylesheet', 
+                href: 'https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css', 
+                integrity: 'sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU=', 
+                crossorigin: 'anonymous'
+            },
+            {
+                rel: 'stylesheet',
+                href: "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css",
+                integrity: "sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=",
+                crossorigin: "anonymous",
+            }
         ]
     },
+    // prevent scroll to top behaviour
+    // router: {
+    //     scrollBehavior: function(to, from, savedPosition) {
+    //         console.log({ to, from, savedPosition })
+    //     }
+    // },
     /*
     ** Customize the progress-bar color
     */
