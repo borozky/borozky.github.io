@@ -17,7 +17,7 @@ yarn install
 yarn run dev
 
 # generate static project and copy to parent folder to update Github pages
-yarn run regenerate
+yarn run deploy:windows # or use `yarn run deploy:mac` if you are on mac
 ```
 
 #### Modifying this README file

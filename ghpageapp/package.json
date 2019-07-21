@@ -9,7 +9,8 @@
     "build": "nuxt build",
     "start": "nuxt start",
     "generate": "nuxt generate",
-    "regenerate": "nuxt generate && copy .\\dist\\* ..\\ && copy .\\dist\\_nuxt\\* ..\\_nuxt\\ && copy .\\dist\\_nuxt\\img\\* ..\\_nuxt\\img\\"
+    "deploy:windows": "nuxt generate && copy .\\dist\\* ..\\ && copy .\\dist\\_nuxt\\* ..\\_nuxt\\ && copy .\\dist\\_nuxt\\img\\* ..\\_nuxt\\img\\",
+    "deploy:mac": "nuxt generate && cp -R ./dist/* ../"
   },
   "dependencies": {
     "@nuxtjs/axios": "^5.5.4",
