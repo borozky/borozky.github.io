@@ -32,7 +32,7 @@
                         </li>
                     </ul>
                     <ul id="Documents">
-                        <li><i class="fa fa-file"></i> <a href="https://drive.google.com/open?id=1UV3Gww6Db0bqDvrBY24IWL2rassMjxTU" target="_blank" title=".NET Resume (Updated 09 December 2018)">Resume</a></li>
+                        <li><i class="fa fa-file"></i> <a href="https://drive.google.com/open?id=1PZtcn80X7BNVyo2w7AmuT-T8VKyYoYFo" target="_blank" title="Updated 04 August 2019">Resume</a></li>
                         <li><i class="fa fa-bar-chart"></i> <a :href="academic_transcript" target="_blank" :title="`Academic Transcript (Issued ${ academic_transcript_date_issued })`">Academic Transcript</a></li>
                     </ul>
                 </div>
