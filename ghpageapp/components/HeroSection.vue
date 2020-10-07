@@ -32,7 +32,7 @@
                         </li>
                     </ul>
                     <ul id="Documents">
-                        <li><i class="fa fa-file"></i> <a href="https://drive.google.com/open?id=1PZtcn80X7BNVyo2w7AmuT-T8VKyYoYFo" target="_blank" title="Updated 04 August 2019">Resume</a></li>
+                        <li><i class="fa fa-file"></i> <a :href="resume_link" target="_blank" :title="`Updated ${resume_last_updated}`">Resume</a></li>
                         <li><i class="fa fa-bar-chart"></i> <a :href="academic_transcript" target="_blank" :title="`Academic Transcript (Issued ${ academic_transcript_date_issued })`">Academic Transcript</a></li>
                     </ul>
                 </div>
@@ -85,6 +85,8 @@ export default Vue.extend({
         return {
             academic_transcript: process.env["ACADEMIC_TRANSCRIPT"],
             academic_transcript_date_issued: process.env["ACADEMIC_TRANSCRIPT_DATE_ISSUED"],
+            resume_link: process.env['RESUME_LINK'],
+            resume_last_updated: process.env['RESUME_LAST_UPDATED'],
         }
     }
 })
@@ -172,7 +174,7 @@ export default Vue.extend({
     margin-bottom: 3px;
 }
 
-#AdditionalDetails i.fa, 
+#AdditionalDetails i.fa,
 #Documents i.fa {
     display: inline-block;
     position: absolute;
