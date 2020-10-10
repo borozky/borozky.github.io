@@ -1,7 +1,7 @@
 <template>
     <div class="project-list">
-        <project v-for="(project, index) in projects" 
-            :key="index" 
+        <project v-for="(project, index) in projects"
+            :key="index"
             v-bind="project">
         </project>
     </div>
@@ -49,7 +49,7 @@ export default Vue.extend({
                 },
                 {
                     description: "Label drawing tool written with jQuery and Redux.",
-                    link: "http://35.203.176.225/jquery-labelmaker/index.html",
+                    link: "https://labelmaker.borozky.com",
                     thumbnail: prototypeLabellingTool,
                     title: "Prototype barcode labelling tool",
                 },
@@ -72,7 +72,7 @@ export default Vue.extend({
                 },
                 {
                     description: "HTML prototype for Find a Carer website. Uses Bootstrap v3",
-                    link: "http://35.203.176.225/findacarer/index.html",
+                    link: "https://findacarer.borozky.com",
                     thumbnail: findACarerPrototype,
                     title: "HTML Prototype for FindACarer",
                 },
