@@ -6,7 +6,7 @@
                 <div id="Summary">
                     <h1 id="Author">Joshua Orozco</h1>
                     <h2 id="Role">
-                        Full-stack Developer
+                        Software Developer, Full-stack
                     </h2>
                     <p id="SkillSet">
                         <span>Backend</span> &#183;
@@ -24,10 +24,11 @@
                             <i class="fa fa-envelope"></i> <a href="mailto:joshua.b.orozco@gmail.com">joshua.b.orozco@gmail.com</a>
                         </li>
                         <li>
-                            <i class="fa fa-linkedin"></i> <a href="https://linkedin.com/in/joshua-orozco-8819b0a0" target="_blank">https://linkedin.com/in/joshua-orozco-8819b0a0</a>
+                            <i class="fa fa-linkedin"></i> <a href="https://linkedin.com/in/joshua-orozco-8819b0a0" target="_blank">LinkedIn</a>
                         </li>
                         <li>
-                            <i class="fa fa-github"></i> <a href="https://github.com/borozky/" target="_blank">https://github.com/borozky/</a>
+                            <i class="fa fa-github"></i> <a href="https://github.com/borozky/" target="_blank">Github Repos</a>, 
+                            <i class="fa fa-github"></i> <a href="https://gist.github.com/borozky/" target="_blank">Github Gists</a>
                         </li>
                     </ul>
                     <ul id="Documents">
