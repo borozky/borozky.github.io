@@ -6,13 +6,12 @@
                 <div id="Summary">
                     <h1 id="Author">Joshua Orozco</h1>
                     <h2 id="Role">
-                        Full-stack Developer
+                        Software Developer, Full-stack
                     </h2>
                     <p id="SkillSet">
                         <span>Backend</span> &#183;
                         <span>Front-end</span> &#183;
-                        <span>Mobile</span> &#183;
-                        <span>.NET</span>
+                        <span>Mobile</span>
                     </p>
                     <p id="Location">
                         <small>Melbourne, Australia</small>
@@ -25,10 +24,11 @@
                             <i class="fa fa-envelope"></i> <a href="mailto:joshua.b.orozco@gmail.com">joshua.b.orozco@gmail.com</a>
                         </li>
                         <li>
-                            <i class="fa fa-linkedin"></i> <a href="https://linkedin.com/in/joshua-orozco-8819b0a0" target="_blank">https://linkedin.com/in/joshua-orozco-8819b0a0</a>
+                            <i class="fa fa-linkedin"></i> <a href="https://linkedin.com/in/joshua-orozco-8819b0a0" target="_blank">LinkedIn</a>
                         </li>
                         <li>
-                            <i class="fa fa-github"></i> <a href="https://github.com/borozky/" target="_blank">https://github.com/borozky/</a>
+                            <i class="fa fa-github"></i> <a href="https://github.com/borozky/" target="_blank">Github Repos</a>, 
+                            <i class="fa fa-github"></i> <a href="https://gist.github.com/borozky/" target="_blank">Github Gists</a>
                         </li>
                     </ul>
                     <ul id="Documents">
@@ -92,22 +92,22 @@ export default Vue.extend({
 })
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 .hero-section {
     background-color: #592C8F;
     color: #FFFFFF;
     font-size: 14px;
     padding-bottom: 30px;
     padding-top: 30px;
-}
 
-.hero-section a {
-    color: #FFFFFF;
-    text-decoration: underline;
-}
+    a {
+        color: #FFFFFF;
+        text-decoration: underline;
 
-.hero-section a:hover {
-    text-decoration: none;
+        &:hover {
+            text-decoration: none;
+        }
+    }
 }
 
 .hero-content {
@@ -140,13 +140,14 @@ export default Vue.extend({
     width: 40px;
     border-radius: 10px;
     margin: 10px;
+
+    img {
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+    }
 }
 
-.tech-icon img {
-    display: inline-block;
-    width: 100%;
-    height: 100%;
-}
 
 #Author, #Role, #SkillSet, #Location {
     margin: 0;
@@ -185,15 +186,16 @@ export default Vue.extend({
 @media screen and (min-width: 769px) {
     .hero-section {
         font-size: 16px;
-    }
 
-    .hero-section a {
-        color: #FFFFFF;
-        text-decoration: underline;
-    }
+        a {
+            color: #FFFFFF;
+            text-decoration: underline;
 
-    .hero-section a:hover {
-        text-decoration: none;
+            &:hover {
+                text-decoration: none;
+            }
+        }
+
     }
 
     #Summary {

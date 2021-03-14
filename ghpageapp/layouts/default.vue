@@ -6,17 +6,14 @@
 </template>
 
 <script lang="ts">
-import {Component, Vue} from 'nuxt-property-decorator';
+import Vue from 'vue';
 import HeroSection from '../components/HeroSection.vue';
-import Navigation from '../components/Navigation.vue';
-import { NuxtConfigurationHead } from '@nuxt/config/types/head';
 
-@Component({
+export default Vue.extend({
     components: {
-        "hero-section": HeroSection,
+        HeroSection
     }
 })
-export default class DefaultLayout extends Vue {}
 </script>
 
 
