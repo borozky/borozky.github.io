@@ -11,8 +11,7 @@
                     <p id="SkillSet">
                         <span>Backend</span> &#183;
                         <span>Front-end</span> &#183;
-                        <span>Mobile</span> &#183;
-                        <span>.NET</span>
+                        <span>Mobile</span>
                     </p>
                     <p id="Location">
                         <small>Melbourne, Australia</small>
