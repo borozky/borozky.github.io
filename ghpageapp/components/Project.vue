@@ -43,39 +43,43 @@ export default Vue.extend({
 })
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 .project {
     padding-bottom: 60px;
+
+    a {
+        word-wrap: break-word;
+    }
 }
 
-.project a {
-    word-wrap: break-word;
-}
 
 .project-details {
     width: 100%;
     text-align: left;
     margin-bottom: 15px;
+
+    h3 {
+        margin-bottom: 15px;
+    }
 }
 
-.project-details h3 {
-    margin-bottom: 15px;
-}
 
 .project-image {
     text-align: right;
+
+    a {
+        display: inline-block;
+        width: 100%;
+        text-align: left;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
 }
 
-.project-image a {
-    display: inline-block;
-    width: 100%;
-    text-align: left;
-}
 
-.project-image img {
-    max-width: 100%;
-    height: auto;
-}
 
 @media screen and (min-width: 769px) {
     .project {

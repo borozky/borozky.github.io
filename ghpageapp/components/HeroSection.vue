@@ -92,22 +92,22 @@ export default Vue.extend({
 })
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 .hero-section {
     background-color: #592C8F;
     color: #FFFFFF;
     font-size: 14px;
     padding-bottom: 30px;
     padding-top: 30px;
-}
 
-.hero-section a {
-    color: #FFFFFF;
-    text-decoration: underline;
-}
+    a {
+        color: #FFFFFF;
+        text-decoration: underline;
 
-.hero-section a:hover {
-    text-decoration: none;
+        &:hover {
+            text-decoration: none;
+        }
+    }
 }
 
 .hero-content {
@@ -140,13 +140,14 @@ export default Vue.extend({
     width: 40px;
     border-radius: 10px;
     margin: 10px;
+
+    img {
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+    }
 }
 
-.tech-icon img {
-    display: inline-block;
-    width: 100%;
-    height: 100%;
-}
 
 #Author, #Role, #SkillSet, #Location {
     margin: 0;
@@ -185,15 +186,16 @@ export default Vue.extend({
 @media screen and (min-width: 769px) {
     .hero-section {
         font-size: 16px;
-    }
 
-    .hero-section a {
-        color: #FFFFFF;
-        text-decoration: underline;
-    }
+        a {
+            color: #FFFFFF;
+            text-decoration: underline;
 
-    .hero-section a:hover {
-        text-decoration: none;
+            &:hover {
+                text-decoration: none;
+            }
+        }
+
     }
 
     #Summary {

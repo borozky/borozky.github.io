@@ -22,14 +22,14 @@ export default Vue.extend({
 })
 </script>
 
-
-<style scoped>
+<style lang="scss" scoped>
 header {
     padding-top: 30px;
     padding-bottom: 15px;
-}
-header h2 {
-    margin: 0;
+
+    h2 {
+        margin: 0;
+    }
 }
 </style>
 
