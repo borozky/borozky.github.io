@@ -1,7 +1,7 @@
-import NuxtConfiguration from "@nuxt/config"
+import { NuxtConfig } from '@nuxt/types'
 
-const config: NuxtConfiguration = {
-    mode: 'spa',
+const config: NuxtConfig = {
+    ssr: false,
     /*
     ** Headers of the page
     */
