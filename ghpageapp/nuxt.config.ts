@@ -2,6 +2,7 @@ import { NuxtConfig } from '@nuxt/types'
 
 const config: NuxtConfig = {
     ssr: false,
+    target: 'static',
     /*
     ** Headers of the page
     */
