@@ -41,9 +41,14 @@
                     <span class="tech-icon" style="background-color: transparent">
                         <img src="../assets/react.svg" title="ReactJS + Redux" alt="">
                     </span>
+                    <span class="tech-icon" style="background-color: transparent">
+                        <img src="../assets/vue-logo.png" title="Vue" alt="">
+                    </span>
+                    <!--
                     <span class="tech-icon" style="border-radius: 100%">
                         <img src="../assets/netcore.svg" title="C#, ASP.NET Core, Entity Framework" alt="">
                     </span>
+                    -->
                     <span class="tech-icon">
                         <img src="../assets/laravel.svg" title="Laravel" alt="">
                     </span>
@@ -56,9 +61,11 @@
                     <span class="tech-icon" style="width: auto; background-color: transparent">
                         <img src="../assets/azure-sql.svg" title="SQL, MySQL, SQLite, SQL Server" alt="" style="width: auto">
                     </span>
+                    <!--
                     <span class="tech-icon">
                         <img src="../assets/ios-dev.svg" title="iOS Development and Design" alt="">
                     </span>
+                    -->
                     <span class="tech-icon" style="background-color: transparent">
                         <img src="../assets/android-dev.svg" title="Android Development" alt="">
                     </span>
