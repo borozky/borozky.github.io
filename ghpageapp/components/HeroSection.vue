@@ -21,19 +21,12 @@
                             <i class="fa fa-graduation-cap"></i> RMIT University Bachelor of I.T. graduate
                         </li>
                         <li>
-                            <i class="fa fa-envelope"></i> <a href="mailto:joshua.b.orozco@gmail.com">joshua.b.orozco@gmail.com</a>
-                        </li>
-                        <li>
                             <i class="fa fa-linkedin"></i> <a href="https://linkedin.com/in/joshua-orozco-8819b0a0" target="_blank">LinkedIn</a>
                         </li>
                         <li>
                             <i class="fa fa-github"></i> <a href="https://github.com/borozky/" target="_blank">Github Repos</a>, 
                             <i class="fa fa-github"></i> <a href="https://gist.github.com/borozky/" target="_blank">Github Gists</a>
                         </li>
-                    </ul>
-                    <ul id="Documents">
-                        <li><i class="fa fa-file"></i> <a :href="resume_link" target="_blank" :title="`Updated ${resume_last_updated}`">Resume</a></li>
-                        <li><i class="fa fa-bar-chart"></i> <a :href="academic_transcript" target="_blank" :title="`Academic Transcript (Issued ${ academic_transcript_date_issued })`">Academic Transcript</a></li>
                     </ul>
                 </div>
 
